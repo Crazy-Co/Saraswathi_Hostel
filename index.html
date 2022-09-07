@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Saraswathi | IITM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fa40b7bfec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="head" id="head">
+        <div class="container1 flex1">
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="logo" height="50px">
+                <h1>Saraswathi Hostel</h1>
+            </div>
+            <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Saraswathi Hostel, IIT Madras, Chennai, <br> Tamil Nadu (PIN Code: 600036)</span>
+            </div>
+        </div>
+    </section>
+
+    <header class="header">
+        <div class="container1 nav">
+            <nav class="navbar flex1">
+                <div class="sticky_logo logo">
+                    <img src="images/logo.jpg" alt="logo" height="50px">
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#room">Room</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#shop">Shop</a></li> -->
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#complaint">Complaint</a></li>
+                    <li><a href="#suggestion">Suggestion</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="head_contact">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        let status = 0;
+
+        // hamburger javascript for mobile
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-menu li").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+
+            var head_contact = document.querySelector(".head_contact i");
+            head_contact.classList.toggle("black", window.scrollY > 0);
+        })
+    </script>
+
+    <!-- home -->
+    <div class="home container2" id="home">
+        <h1 class="title1">Saraswathi: Hostel 1</h1>
+        <div class="poster">
+            <img src="" alt="">
+            <h3>The place of joy and happiness, where friends turn into family</h3>
+        </div>
+        <p class="para">
+            IIT Madras is a residential institute and provides accommodation to students in the hostels. There are 20
+            hostels, all named after the mighty rivers of India. Of the hostels, 5 are for female and 15 are for male
+            students. The first-year undergraduate students are accommodated in a sharing style accommodation. In
+            subsequent years, single/double/triple rooms are allotted depending on the hostel. Postgraduate students are
+            accommodated in a sharing/single room. Internet and Local Area Network (LAN) facilities are provided in
+            every room and there is a computer room in the hostels.
+        </p>
+    </div>
+    <!-- home -->
+
+    <!-- about -->
+    <div class="about container2" id="about">
+        <div class="box">
+            <div class="title" id="manager">
+                <h3>Hostel Manager / Assistant Manager</h3>
+            </div>
+            <div class="hstl_mngr">
+                <div class="about_box" id="box1">
+                    <p>Name <span>SARAVANAN T R</span></p>
+                </div>
+                <div class="about_box" id="box2">
+                    <p>E-Mail <span>saraswathihostel@iitm.ac.in</span></p>
+                </div>
+                <div class="about_box" id="box3">
+                    <p>Hostel Office No. <span>044 - 2257 8771</span></p>
+                </div>
+                <div class="about_box" id="box4">
+                    <p>Security No. <span>044 - 2257 8770</span></p>
+                </div>
+            </div>
+            <div class="title" id="warden">
+                <h3>Hostel Warden</h3>
+            </div>
+            <div class="hstl_warden">
+                <div class="img"><img src="images/warden.jfif"></div>
+                <div>
+                    <p>Warden Name: Dr. NEELESH S UPADHYE</p>
+                    <p>Email: wardensaras@smail.iitm.ac.in</p>
+                    <p>Office Number: 044 - 2257 8772</p>
+                </div>
+                <div>
+                    <h2>Hostel Staff(s)</h2>
+                    <p>PRABHUDAS A <br>(MULTI-TASKING STAFF GR.I)</p>
+                    <p>VEERAPANDIYAN A <br>(COOK)</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- about -->
+
+    <!-- facilities -->
+    <div class="facilities container2" id="facilities">
+
+        <div class="box">
+            <div class="title">
+                <h3>Facilities</h3>
+            </div>
+            <div class="para">
+                <p>
+                    Hostel facilities include a garden and a library from which students can borrow books.
+                    Every hostel has washing machines, some sports facilities, music/tech/television rooms. Most
+                    hostel-level
+                    meetings take place in common rooms. The students celebrate festivals such as Holi, Pongal, Onam,
+                    Diwali, and New Year's Eve. The hostel night is organised annually by each hostel, where the entire
+                    hostel celebrates with food and music. This occasion also commemorates the graduating seniors of
+                    that hostel.
+                </p>
+            </div>
+            <div class="image_box" id="div1"></div>
+            <div class="image_box" id="div2"></div>
+            <div class="image_box" id="div3"></div>
+            <div class="image_box" id="div4"></div>
+            <div class="image_box" id="div5"></div>
+            <div class="image_box" id="div6"></div>
+            <div class="image_box" id="div7"></div>
+            <div class="text">
+                <p>* Hostel Guard - The most important person * Bathing - Occasionaly * Good food - Winning an Oscar *
+                    Clothes - Unwashed for weeks * Mobile - Only best friend * Fests - Best time to go home * Kettle -
+                    Maggie maker * Maggi - Lifesaver and Nightmeal * Nights - Sleepless *</p>
+            </div>
+        </div>
+    </div>
+    <!-- facilities -->
+
+    <!-- complaint -->
+    <div class="complaint container2" id="complaint">
+        <div class="title">
+            <h3>Any Complaints</h3>
+        </div>
+        <div>
+            <div class="container3">
+                <h2>Do you have any Complaint</h2>
+                <form action="post">
+                    <div class="inputBox">
+                        <input type="text" id="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="roll_No" required="required">
+                        <span>Roll Number</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="complaintBox" id="complaintBox" cols="38" rows="5"></textarea>
+                        <span>Complaint Box</span>
+                    </div>
+                    <div class="inputBox">
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div>
+                            <input type="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="complaint_img">
+                <img src="images/complaint.jpg" alt="complaint image">
+            </div>
+        </div>
+    </div>
+    <!-- complaint -->
+
+    <!-- suggestion -->
+    <div class="suggestion container2" id="suggestion">
+        <div class="title">
+            <h3>Suggestion for us</h3>
+        </div>
+        <div>
+            <div class="suggestion_img">
+                <img src="images/suggestion.webp" alt="suggestion image">
+            </div>
+            <div class="container3">
+                <h2>Feel free to give your Suggestions</h2>
+                <form action="post">
+                    <div class="inputBox">
+                        <input type="text" id="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="roll_No" required="required">
+                        <span>Roll Number</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="suggestionBox" id="suggestionBox" cols="38" rows="5"></textarea>
+                        <span>Suggestion Box</span>
+                    </div>
+                    <div class="inputBox">
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div>
+                            <input type="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- suggestion -->
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Made by Team Rishabh - Co-ordination with Institute Webops</p>
+        <p><a href="">Hostel Rules and Regulations</a></p>
+        <p>Copyright 2022 &copy Indian Institute of Technology, Madras </p>
+    </div>
+    <!-- footer -->
+
+    <!-- GoTopButton -->
+    <div class="goTopBtn">
+        <a href="#head">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+    <!-- GoTopButton -->
+
+</body>
+
+</html>
